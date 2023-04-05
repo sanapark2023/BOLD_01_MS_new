@@ -2,6 +2,7 @@
     position: sticky;
     background: #181659;
     top: 0;
+    z-index: 1;
 }
 .ms_header .container{
     display: flex;
