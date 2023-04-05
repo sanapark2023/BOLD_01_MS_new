@@ -1,12 +1,16 @@
 .ms_step2{
     height: 476px;
-    background: linear-gradient(77.4deg, #F2F5FA 0%, rgba(242, 245, 250, 0) 66.23%);
+    background: linear-gradient(257.4deg, #F2F5FA 0%, rgba(242, 245, 250, 0) 66.23%);
 }
 .ms_step2 .container{
     position: relative;
     max-width: 880px;
     margin: auto;
     padding: 132px 0;
+}
+.ms_step2_left{
+    position: absolute;
+    right: -10px;
 }
 .ms_step2_step{
     font-weight: 700;
@@ -38,6 +42,6 @@
 }
 .ms_step2 .container img{
     position: absolute;
-    right: -13px;
+    left: -6px;
     top: 100px
 }

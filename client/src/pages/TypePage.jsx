@@ -14,6 +14,20 @@ function TypePage() {
                        ['소확행의 현실주의자','소확행의 현실주의자는 적은 위험, 적은 수익을 추구합니다. 이들에게 투자는 단기적이고 부수적인 요소이며 현재 기업의 가치를 중요시합니다.'],
                        ['책임있는 CEO','책임있는 CEO로서 이들은 ESG에 대하여 엄격한 잣대를 요구하며, 무모한 투자보다는 안정적이고 현재가치에 집중하는 투자철학을 보유하고 있습니다.'],
                        ['인내하는 미래비전가','인내하는 미래비전가는 안정적이지만 미래 비전이 확고한 기업들을 선택하여 투자합니다. ESG보다는 현재의 안정 등 현실적인 요소들을 추구합니다.']]
+
+    function shuffle(array) {
+    array.sort(() => Math.random() - 0.5);
+    }
+    const type_name_list =  [['트렌디한', '월스트리트인',1],
+                            ['스릴을 즐기는','투자야망인',2],
+                            ['개척하는', '모험가',3],
+                            ['실리콘밸리형', '미래 기업인',4],
+                            ['중재하는', '이상주의자',5],
+                            ['소확행의', '현실주의자',6],
+                            ['책임있는', 'CEO',7],
+                            ['인내하는', '미래비전가',8]]
+    shuffle(type_name_list)
+
     return (
     <div className='ms_typepage'>
         <div className='ms_typepage_desc'>
@@ -49,30 +63,14 @@ function TypePage() {
             <div className='container'>
                 <h3>나와 비슷하거나 다른 유형도 구경해보세요!</h3>
                 <ul className='ms_types_list'>
-                    <li>
-                        <a href='../../type/5'>
-                            <img src='#'></img>
-                            <p>스릴을 즐기는<br></br> 투자야망인</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href='../../type/5'>
-                            <img src='#'></img>
-                            <p>스릴을 즐기는<br></br> 투자야망인</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href='../../type/5'>
-                            <img src='#'></img>
-                            <p>스릴을 즐기는<br></br> 투자야망인</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href='../../type/5'>
-                            <img src='#'></img>
-                            <p>스릴을 즐기는<br></br> 투자야망인</p>
-                        </a>
-                    </li>
+                    {type_name_list.slice(0,4).map((item, index)=>{return(
+                        <li key={index}>
+                            <a href={'../../type/'+(item[2])}>
+                                <img src={'type'+(item[2])+'.png'}></img>
+                                <p>{item[0]}<br></br>{item[1]}</p>
+                            </a>
+                        </li>
+                    )})}
                 </ul>
             </div>
         </div>

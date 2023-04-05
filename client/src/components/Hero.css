@@ -1,12 +1,22 @@
 .ms_hero{
     background: linear-gradient(0deg, #1F1E37 0%, #18155E 100%);
 }
+.ms_hero .container{
+    position: relative;
+    padding: 100px 0px 140px;
+    display: flex;
+    flex-direction: column;
+    min-height: 552px;
+    box-sizing: border-box;
+    max-width: 880px;
+    margin: auto;
+}
 .ms_hero h1{
     margin: 0;
     font-family: 'Roboto';
     font-weight: 800;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 50px;
+    line-height: 60px;
     color: #FFFFFF;
 }
 .ms_hero h1 span{
@@ -22,6 +32,7 @@
     font-size: 15px;
     line-height: 22px;
     color: #FFFFFF;
+    margin-top: 20px;
 }
 .ms_hero p span{
     font-weight: 700;
@@ -42,20 +53,10 @@
     background: #2E54EA;
     border-radius: 4px;
     padding: 18px, 32px;
-    margin-top: 53px;
+    margin-top: 50px;
 }
 .ms_hero img{
     position: absolute;
-    top:57px;
+    top:60px;
     right: -15px;
-}
-.ms_hero .container{
-    position: relative;
-    padding: 128px 0px 160px;
-    display: flex;
-    flex-direction: column;
-    min-height: 552px;
-    box-sizing: border-box;
-    max-width: 880px;
-    margin: auto;
 }
