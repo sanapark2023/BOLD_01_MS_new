@@ -18,6 +18,14 @@ function TypePage() {
     function shuffle(array) {
     array.sort(() => Math.random() - 0.5);
     }
+    const type_name_list_fixed =  [['트렌디한', '월스트리트인',1],
+                                    ['스릴을 즐기는','투자야망인',2],
+                                    ['개척하는', '모험가',3],
+                                    ['실리콘밸리형', '미래 기업인',4],
+                                    ['중재하는', '이상주의자',5],
+                                    ['소확행의', '현실주의자',6],
+                                    ['책임있는', 'CEO',7],
+                                    ['인내하는', '미래비전가',8]]
     const type_name_list =  [['트렌디한', '월스트리트인',1],
                             ['스릴을 즐기는','투자야망인',2],
                             ['개척하는', '모험가',3],
@@ -33,9 +41,9 @@ function TypePage() {
         <div className='ms_typepage_desc'>
             <div className='container'>
                 <h3>{'8가지 투자유형 > '+type_list[id-1][0]}</h3>
-                <h1>{type_list[id-1][0]}</h1>
+                <h1>{type_name_list_fixed[id-1][0]}<br></br>{type_name_list_fixed[id-1][1]}</h1>
                 <p>{type_list[id-1][1]}</p>
-                <img src='#'></img>
+                <img src={'../../type'+id+'.png'} alt='img'/>
             </div>
         </div>
         <div className='ms_typepage_index'>
@@ -66,7 +74,7 @@ function TypePage() {
                     {type_name_list.slice(0,4).map((item, index)=>{return(
                         <li key={index}>
                             <a href={'../../type/'+(item[2])}>
-                                <img src={'type'+(item[2])+'.png'}></img>
+                                <img src={'../../type'+(item[2])+'.png'}></img>
                                 <p>{item[0]}<br></br>{item[1]}</p>
                             </a>
                         </li>

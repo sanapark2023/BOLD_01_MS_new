@@ -17,7 +17,7 @@
 .ms_typepage_desc .container h1{
     font-weight: 700;
     font-size: 40px;
-    line-height: 47px;
+    line-height: 55px;
     color: #4A4A4A;
     margin-top: 40px;
 }
@@ -31,10 +31,12 @@
 }
 .ms_typepage_desc .container img{
     position: absolute;
-    right: -5px;
+    right: -50px;
+    top: 68px;
 }
 .ms_typepage_index{
     background: #F2F5FA;
+    position: relative;
 }
 .ms_typepage_index .container{
     max-width: 880px;
@@ -44,6 +46,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 48px 0;
+    z-index: 2;
 }
 .ms_typepage_index_left{
     display: flex;
@@ -74,6 +77,10 @@
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
+}
+.ms_typepage_chart{
+    background-color: white;
+    position: relative;
 }
 .ms_typepage_chart .container{
     max-width: 880px;
