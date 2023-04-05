@@ -1,0 +1,124 @@
+.ms_typepage_desc{
+    max-width: 880px;
+    margin: auto;
+}
+.ms_typepage_desc .container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 56px 0;
+}
+.ms_typepage_desc .container h3{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 25px;
+    color: #4A4A4A;
+}
+.ms_typepage_desc .container h1{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #4A4A4A;
+    margin-top: 40px;
+}
+.ms_typepage_desc .container p{
+    width: 447px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #4A4A4A;
+    margin-top: 30px;
+}
+.ms_typepage_desc .container img{
+    position: absolute;
+    right: -5px;
+}
+.ms_typepage_index{
+    background: #F2F5FA;
+}
+.ms_typepage_index .container{
+    max-width: 880px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 0;
+}
+.ms_typepage_index_left{
+    display: flex;
+    flex-direction: column;
+    width: 447px;
+}
+.ms_typepage_index_left h3{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 16px;
+}
+.ms_typepage_index_left h3 span{
+    color: #2E54EA;
+}
+.ms_typepage_index_left p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #4A4A4A;
+}
+.ms_typepage_index .container a{
+    background: #2E54EA;
+    border-radius: 8px;
+    padding: 17px 30px;
+    height: fit-content;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.ms_typepage_chart .container{
+    max-width: 880px;
+    margin: auto;
+    padding: 64px 0px;    
+}
+.ms_typepage_chart_index h1{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FF0006;
+}
+.ms_typepage_chart_index div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+    margin-bottom: 55px;
+}
+.ms_typepage_chart_index div .index_tag{
+    background: #FFECEC;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    color: #FF0006;
+    padding: 0 9px;
+}
+.ms_typepage_chart_index div .index_tag span:first-child{
+    margin-right: 6px;
+}
+.ms_typepage_chart_index div .update{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    color: #555A5E;
+    margin-left: 12px;
+}
+.ms_typepage_other{
+    background: #F6F7F9;
+}
+.ms_typepage_other .container{
+    max-width: 880px;
+    margin: auto;
+    padding: 62px 0 74px;
+}
+.ms_typepage_other .container h3{
+
+}

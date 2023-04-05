@@ -7,9 +7,9 @@ function Footer() {
             <div className='ms_footer_top'>
                 <a className='ms_footer_top_logo' href='/'>Survey CI</a>
                 <ul>
-                    <li><a href='test'>투자유형 검사하기</a></li>
-                    <li><a href='background'>백그라운드</a></li>
-                    <li><a href='types'>8가지 투자유형</a></li>
+                    <li><a href='../../test'>투자유형 검사하기</a></li>
+                    <li><a href='../../background'>백그라운드</a></li>
+                    <li><a href='../../types'>8가지 투자유형</a></li>
                 </ul>
             </div>
             <div className='ms_footer_bottom'>

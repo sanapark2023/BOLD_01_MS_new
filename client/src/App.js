@@ -8,6 +8,8 @@ import Step3 from './components/Step3';
 import Types from './components/Types';
 import Footer from './components/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import TypePage from './pages/TypePage';
+import TestPage from './pages/TestPage';
 
 function App() {
   return (
@@ -23,14 +25,11 @@ function App() {
               <Step2/>
               <Step3/>
               <Types/>
-            </>}>
-          </Route>
-          <Route path="/test" element={<Types/>}>
-          </Route>
-          <Route path="/background" element={<Types/>}>
-          </Route>
-          <Route path="/types" element={<Types/>}>
-          </Route> 
+            </>}/>
+          <Route path="/test" element={<TestPage/>}/>
+          <Route path="/background" element={<Types/>}/>
+          <Route path="/types" element={<Types/>}/>
+          <Route path="/type/:id" element={<TypePage/>}/>
         </Routes>
       <Footer/>
     </div>

@@ -1,0 +1,35 @@
+.ms_test{
+    background-color: #F2F5FA;
+}
+.ms_test .container{
+    max-width: 880px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 97px 0 60px;
+}
+.ms_test_title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2E54EA;
+}
+.ms_test_question{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 47px;
+    color: #4A4A4A;
+    margin: 0;
+    margin-top: 30px;
+}
+.ms_test_desc{
+    width: 580px;
+    height: 62px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #4A4A4A;
+    margin: 0;
+    margin-top: 12px;
+}

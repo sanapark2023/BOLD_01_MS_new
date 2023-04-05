@@ -4,12 +4,10 @@ function Step3() {
     return (
     <article className='ms_step3'>
         <div className='container'>
-        <p>STEP 1</p>
-        <p>투자유형을 검사하세요.</p>
-        <p>간편한 온라인 설문으로 나의 투자유형을 알아보세요
-총 8개의 유형 중 나의 투자유형은 무엇일까요?</p>
-<a>{'투자유형 검사하기 >'}</a>
-        <img src='/1_step.png' alt='이미지'></img>
+            <p className='ms_step3_step'>STEP 3</p>
+            <p className='ms_step3_title'>투자자로서 더 성장하세요</p>
+            <p className='ms_step3_desc'>나의 투자유형과 추천지표를 참고하여<br></br> 좋은 투자자가 되기 위해 꾸준히 공부하며 성장하세요</p>
+            <img src='/3_step.png' alt='이미지'></img>
         </div>
     </article>
     );
