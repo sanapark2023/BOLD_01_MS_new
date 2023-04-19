@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import TypePage from './pages/TypePage';
 import TestPage from './pages/TestPage';
+import Background from './pages/Background';
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
               <Types/>
             </>}/>
           <Route path="/test" element={<TestPage/>}/>
-          <Route path="/background" element={<Types/>}/>
+          <Route path="/background" element={<Background/>}/>
           <Route path="/types" element={<Types/>}/>
           <Route path="/type/:id" element={<TypePage/>}/>
         </Routes>

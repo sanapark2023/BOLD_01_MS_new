@@ -1,0 +1,30 @@
+.ms_background .container{
+    background-color: #F2F5FA;
+}
+.ms_background .container:nth-child(2){
+    background-color: white;
+}
+.ms_background_section{
+    max-width: 880px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 76px 0;
+}
+.ms_background_section h2{
+    color: #2E54EA;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 16px;
+    max-width: 500px;
+}
+.ms_background_section h1{
+    margin-bottom: 24px;
+    max-width: 500px;
+}
+.ms_background_section p{
+    max-width: 500px;
+}
+
