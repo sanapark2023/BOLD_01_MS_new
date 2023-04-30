@@ -1,5 +1,9 @@
+# 설문조사 응답결과를 조합하여 투자유형을 반환합니다
+
 def get_investment_preference_result(survey_data):
     profit, esg, future_vision = 0, 0, 0
+    
+    # 각 문항에 대한 응답번호에 따라 점수 추가
     if survey_data["1"] == 1:
         profit += 4
         esg += 4
@@ -58,7 +62,8 @@ def get_investment_preference_result(survey_data):
         esg += 6
     else:
         esg += 8
-        
+    
+    # 최종 합산 결과를 통해 투자유형 결정
     if profit >= 14 and future_vision < 3 and esg >= 6:
         type = 1
     elif profit >= 14 and future_vision < 3 and esg < 6:
