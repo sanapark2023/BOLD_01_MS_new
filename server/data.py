@@ -1,10 +1,27 @@
 import requests
+import os
 from datetime import datetime, timedelta
+
+AUTH_KEY = os.getenv("AUTH_KEY")
+
+def scale_1(df):
+    df
+    scaled_data = []
+    return scaled_data
+
+def scale_2(df):
+    df
+    scaled_data = []
+    return scaled_data
+
+def scale_3(df):
+    df
+    scaled_data = []
+    return scaled_data
 
 def get_data(type):
     start_date = (datetime.today() - timedelta(days=3650)).strftime('%Y%m')
     today = datetime.today().strftime('%Y%m')
-    AUTH_KEY = "D0W02F3T4EJL1VJ2L2Q3"
     if type == 1:
         code = "901Y056/M/{}/{}/S23A".format(start_date, today)
     elif type == 2:
