@@ -1,7 +1,7 @@
 // languageContext.js
 
 import React, { createContext, useState, useEffect } from "react";
-import messages from "./messages/messages";
+import {messages} from "./messages/messages";
 import useLocalStorageState from 'use-local-storage-state';
 
 export const LanguageContext = createContext();
@@ -24,8 +24,8 @@ const LanguageContextProvider = ({ children }) => {
     setLanguage(newLanguage);
   };
 
-  const getMessage = (key) => {
-    return messages[language][key];
+  const getMessage = (page, key) => {
+    return messages[language][page][key];
   };
 
 
