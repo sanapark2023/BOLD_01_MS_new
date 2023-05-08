@@ -70,3 +70,84 @@
 .ms_header ul li:hover{
     border-bottom: 1px solid #27C5F7;
 }
+
+@media (max-width: 768px) {
+    .ms_header{
+        position: sticky;
+        background: #181659;
+        top: 0;
+        z-index: 999;
+        padding: 12px 24px;
+    }
+    .ms_header .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        max-width: 880px;
+        margin: auto;
+    }
+    .ms_header h1{
+        font-family: 'Red Hat Display';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    .ms_header nav{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ms_header nav a{
+        margin-right: 0px;
+        text-decoration: none;
+        font-family: 'Roboto';
+        color: #E4E5E6;
+    }
+    .ms_header nav a h2{
+        margin: 0;
+        border-bottom: 1px solid #181659;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+    }
+    .ms_header nav a:last-child{
+        margin-right: 0;
+    }
+    .ms_header nav .active h2{
+        font-weight: 700;
+        border-bottom: 1px solid #27C5F7;
+    }
+    .ms_header ul{
+        position: absolute;
+        right: 24px;
+        top: 20px;
+        list-style: none;
+        font-family: 'Roboto';
+        font-size: 13px;
+        line-height: 15px;
+        color: #E4E5E6;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+    .ms_header ul li{
+        margin-left: 35px;
+        cursor: pointer;
+        border-bottom: 1px solid #181659;
+    }
+    .ms_header ul li:first-child{
+        margin-left: 0;
+    }
+    .ms_header ul li:hover{
+        border-bottom: 1px solid #27C5F7;
+    }
+
+}

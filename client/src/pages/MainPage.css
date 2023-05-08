@@ -206,3 +206,128 @@
     height: 626px;
     margin-left: 50px;
 }
+
+
+@media (max-width: 768px) {
+    .ms_hero .container{
+        padding: 24px;
+        min-height: auto;
+    }
+    .ms_hero h1{
+        margin: 20px 0;
+        font-size: 36px;
+        line-height: 140%;
+        color: #FFFFFF;
+    }
+    .ms_hero p{
+        line-height: 160%;
+    }
+    .ms_hero a{
+        width: 100%;
+        margin: 40px 0 30px;
+    }
+    .ms_hero img{
+        position: absolute;
+        width: 30%;
+        top:60px;
+        right: 24px;
+    } 
+    .ms_api .container{
+        margin: 24px;
+    }
+    .ms_api p{
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 140%;
+    }
+    .ms_api img{
+        margin-bottom: 0px;
+        width: 100%;
+    }
+    .ms_step1{
+        height: auto;
+    }
+    .ms_step1 .container{
+        padding: 36px 24px;
+    }
+    .ms_step1_step{
+        font-size: 15px;
+    }
+    .ms_step1_title{
+        margin-top: 20px;
+        font-size: 22px;
+        line-height: 140%;
+    }
+    .ms_step1_desc{
+        font-size: 15px;
+        line-height: 140%;
+    }
+    .ms_step1 .container a{
+        font-size: 15px;
+    }
+    .ms_step1 .container img{
+        position: relative;
+        margin-top: 20px;
+        width: 100%;
+        right: 0px;
+        top: 0px
+    }
+    
+    .ms_step2{
+        height: auto;
+    }
+    .ms_step2 .container{
+        padding: 36px 24px;
+    }
+    .ms_step2_left{
+        position: relative;
+        right: 0px;
+    }
+    .ms_step2_step{
+        font-size: 15px;
+        line-height: 140%;
+    }
+    .ms_step2_title{
+        margin-top: 20px;
+        font-size: 22px;
+        line-height: 140%;
+    }
+    .ms_step2_desc{
+        font-size: 15px;
+        line-height: 140%;
+    }
+    .ms_step2 .container a{
+        font-size: 15px;
+    }
+    .ms_step2 .container img{
+        position: relative;
+        margin-top: 20px;
+        width: 100%;
+        left: 0px;
+        top: 0px
+    }
+    
+    .ms_step3 .container{
+        padding: 36px 24px;
+    }
+    .ms_step3_step{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .ms_step3_title{
+        font-size: 24px;
+        line-height: 140%;
+        margin-bottom: 20px;
+    }
+    .ms_step3_desc{
+        font-size: 16px;
+        line-height: 140%;
+        margin-bottom: 20px;
+    }
+    .ms_step3 .container img{
+        width: 80%;
+        height: auto;
+        margin-left: 50px;
+    }
+    
+}

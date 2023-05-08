@@ -5,10 +5,17 @@ export const messages = {
     en: {
       background: 
       {
-        title_s_1: "Service Background",
-        title_1_1: "English",
-        title_2_1: "실업률이나 환율 변동이 무엇을 나타내는지, 그 중요성은 어떠한지 분석하기 어려웠나요?"
-      }
+        title_s_1: "Background of the service",
+        title_1_1: "Challenges accessing national data?",
+        title_2_1: "Was it difficult to analyze what unemployment rates or exchange rate fluctuations represent and their significance?",
+        desc_1: "Welcome to SurveyCI! We created this service to assist novice investors. We provide indices optimized for user needs by compiling national data that beginners may find difficult to access. Additionally, we respect ESG values such as corporate social responsibility and climate change, and we include ESG metrics in our indices to accommodate investors' high interest in ESG.",
+        title_s_2: "How to use our service",
+        title_1_2: "Here's how you can utilize our indicators!",
+        desc_2: "Our data at SurveyCI can assist you in making investment decisions! We have analyzed detailed economic data spanning the past 5 years and ESG compliance rates of listed companies on the KOSPI to optimize our service for your investment style.",
+        title_s_3: "References",
+        title_1_3: "We have used reliable data sources.",
+        desc_3: "SurveyCI only uses reliable national data sources. We utilized open APIs from the Bank of Korea and other public portals to gather all necessary data for index calculation, including unemployment rates, economic growth rates, and ESG compliance rates.",
+      },
     },
     ko: {
       background: 

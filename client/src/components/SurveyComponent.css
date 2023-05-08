@@ -7,3 +7,12 @@
 .sd-container-modern{
     margin: 0;
 }
+@media (max-width: 768px) {
+    .sd-root-modern{
+        margin-top: 60px;
+        padding-bottom: 36px;
+    }
+    .sd-container-modern{
+        margin: 0;
+    }
+}

@@ -1,5 +1,5 @@
 import './Footer.css';
-import { Link } from 'react-router-dom';
+import ScrollToTopLink from '../components/ScrollToTopLink';
 import React, { useContext } from "react";
 import { LanguageContext } from "../context/languageContext";
 function Footer() {
@@ -8,11 +8,11 @@ function Footer() {
     <article className='ms_footer'>
         <div className='container'>
             <div className='ms_footer_top'>
-                <Link className='ms_footer_top_logo' to='/'>Survey CI</Link>
+                <ScrollToTopLink className='ms_footer_top_logo' to='/'>Survey CI</ScrollToTopLink>
                 <ul>
-                    <li><Link to='../../test'>{language === 'ko' ? "투자유형 검사" : "Investment Type Test"}</Link></li>
-                    <li><Link to='../../background'>{language === 'ko' ? "백그라운드" : "Background"}</Link></li>
-                    <li><Link to='../../types'>{language === 'ko' ? "8가지 투자유형" : "The 8 investment types"}</Link></li>
+                    <li><ScrollToTopLink to='../../test'>{language === 'ko' ? "투자유형 검사" : "Investment Type Test"}</ScrollToTopLink></li>
+                    <li><ScrollToTopLink to='../../background'>{language === 'ko' ? "백그라운드" : "Background"}</ScrollToTopLink></li>
+                    <li><ScrollToTopLink to='../../types'>{language === 'ko' ? "8가지 투자유형" : "The 8 investment types"}</ScrollToTopLink></li>
                 </ul>
             </div>
             <div className='ms_footer_bottom'>

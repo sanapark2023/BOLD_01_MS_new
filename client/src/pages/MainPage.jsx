@@ -1,6 +1,6 @@
 import './MainPage.css';
 import Types from '../components/Types';
-import { Link } from 'react-router-dom';
+import ScrollToTopLink from '../components/ScrollToTopLink';
 import React, {useContext } from 'react';
 import { LanguageContext } from "../context/languageContext";
 function MainPage() {
@@ -11,7 +11,7 @@ function MainPage() {
             <div className='container'>
                 {language === 'ko'?<h1>나만의<br></br> <span>투자유형</span>을<br></br> 알아보세요!</h1>:<h1>Discover<br></br>your own<br></br><span>investment style</span>!</h1>}
                 {language === 'ko'?<p>투자유형 검사 결과에 따라<br></br> <span>맞춤형 경제지표</span>를 볼 수 있어요</p>:<p>Take the investment type test.<br></br>See <span>customized economic indicators</span> based on your results.</p>}
-                <Link to='/test'>{language === 'ko'?"투자유형 검사하기" : "Take Investment Type Quiz"}</Link>
+                <ScrollToTopLink to='/test'>{language === 'ko'?"투자유형 검사하기" : "Take Investment Type Quiz"}</ScrollToTopLink>
                 <img src='/HeroImg.png' alt='이미지'></img>
             </div>
         </article>
@@ -29,7 +29,7 @@ function MainPage() {
                 {language === 'ko'? "간편한 온라인 설문으로 나의 투자유형을 알아보세요":"Take the investment type test through a simple online survey."}<br></br>
                 {language === 'ko'? "총 8개의 유형 중 나의 투자유형은 무엇일까요?":"Find out which of the 8 types suits you best."}
                 </p>
-                <Link to='/test'>{'투자유형 검사하기 >'}</Link>
+                <ScrollToTopLink to='/test'>{language === 'ko'?'투자유형 검사하기 >':"Take Investment Type Quiz >"}</ScrollToTopLink>
                 <img src='/1_step.png' alt='이미지'></img>
             </div>
         </article>
@@ -40,7 +40,7 @@ function MainPage() {
                     <p className='ms_step2_title'>{language === 'ko'?"추천 지표를 살펴보세요":"Check out your indicators"}</p>
                     <p className='ms_step2_desc'>{language === 'ko'?"수익, 미래가치, ESG에 대한 성향을 바탕으로":"Optimized based on your preference for profit,"}<br></br>
                     {language === 'ko'?"최적화한 데이터입니다. PDF를 다운받아 확인해보세요!":"future value, and ESG. Download the PDF to learn more!"}</p>
-                    <Link to='/types'>{language === 'ko'?'추천 지표 살펴보기 >':"Explore the indicators >"}</Link>
+                    <ScrollToTopLink to='/types'>{language === 'ko'?'추천 지표 살펴보기 >':"Explore the indicators >"}</ScrollToTopLink>
                 </div>
                 <img src='/2_step.png' alt='이미지'></img>
             </div>

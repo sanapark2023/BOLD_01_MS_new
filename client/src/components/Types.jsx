@@ -1,5 +1,5 @@
 import './Types.css';
-import { Link } from 'react-router-dom';
+import ScrollToTopLink from '../components/ScrollToTopLink';
 import { LanguageContext } from "../context/languageContext";
 import { useCallback, useState, useContext } from "react";
 
@@ -34,10 +34,10 @@ function Types() {
         <ul className='ms_types_list'>
             {type_list.map((item, index)=>{return(
                 <li key={index}>
-                    <Link to={'/type/'+(index+1)}>
+                    <ScrollToTopLink to={'/type/'+(index+1)}>
                         <img src={'type'+(index+1)+'.png'}></img>
                         <p>{item[0]}<br></br>{item[1]}</p>
-                    </Link>
+                    </ScrollToTopLink>
                 </li>
             )})}
         </ul>
