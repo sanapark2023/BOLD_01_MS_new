@@ -1,8 +1,10 @@
 import Chart from '../components/Chart';
 import './TypePage.css';
 import { useParams } from 'react-router-dom';
+import React, { useState } from 'react';
 
 function TypePage() {
+    const [data, setData] = useState([{'name':'000000', 'value':0},{'name':'000000', 'value':0}]);
     const { id } = useParams();
     const type_list = [['트렌디한 월스트리트인',
                         '트렌디한 월스트리트인들은 수익을 중요시합니다. 이들은 기업의 현재가치를 분석하여 투자결정을 내리고, ESG에 관하여 엄격한 잣대를 보유하고 있습니다.'],
@@ -58,13 +60,15 @@ function TypePage() {
         <div className='ms_typepage_chart'>
             <div className='container'>
                 <div className='ms_typepage_chart_index'>
-                    <h1>3521.20</h1>
+                    <h1>{data[data.length-1]['value'].toFixed(2)}</h1>
                     <div>
-                        <p className='index_tag'><span>+2.51</span><span>+0.09%</span></p>
-                        <p className='update'>2023.03 기준, 1달 단위 업데이트</p>
+                        <p className='index_tag'>
+                            <span>{(data[data.length-1]['value']-data[data.length-2]['value']).toFixed(2)}</span>
+                            <span>{([(data[data.length-1]['value'] - data[data.length-2]['value'])/data[data.length-1]['value']] * 100).toFixed(2)+"%"}</span></p>
+                        <p className='update'>{data[data.length-1]['name']} 기준, 1달 단위 업데이트</p>
                     </div>
                 </div>
-                <Chart id={id}/>
+                <Chart id={id} data={data} setData={setData}/>
             </div>
         </div>
         <div className='ms_typepage_other'>

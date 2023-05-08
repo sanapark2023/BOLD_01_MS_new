@@ -1,0 +1,208 @@
+.ms_hero{
+    background: linear-gradient(0deg, #1F1E37 0%, #18155E 100%);
+}
+.ms_hero .container{
+    position: relative;
+    padding: 100px 0px 140px;
+    display: flex;
+    flex-direction: column;
+    min-height: 552px;
+    box-sizing: border-box;
+    max-width: 880px;
+    margin: auto;
+}
+.ms_hero h1{
+    margin: 0;
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+.ms_hero h1 span{
+    background: linear-gradient(90.14deg, #55FFE0 0.1%, #2FD1FC 43.93%, #2CCCFF 78.74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.ms_hero p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+.ms_hero p span{
+    font-weight: 700;
+}
+.ms_hero a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 184px;
+    height: 53px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #2E54EA;
+    border-radius: 4px;
+    padding: 18px, 32px;
+    margin-top: 50px;
+}
+.ms_hero img{
+    position: absolute;
+    top:60px;
+    right: -15px;
+}
+
+.ms_api .container{
+    max-width: 880px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.ms_api p{
+    color: #4A4A4A;
+    margin: 0;
+    margin-top: 80px;
+}
+.ms_api img{
+    margin-bottom: 50px;
+}
+
+.ms_step1{
+    height: 476px;
+    background: linear-gradient(77.4deg, #F2F5FA 0%, rgba(242, 245, 250, 0) 66.23%);
+}
+.ms_step1 .container{
+    position: relative;
+    max-width: 880px;
+    margin: auto;
+    padding: 132px 0;
+}
+.ms_step1_step{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A9AEC2;
+}
+.ms_step1_title{
+    margin-top: 35px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #4A4A4A;
+}
+.ms_step1_desc{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4A4A4A;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ms_step1 .container a{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2E54EA;
+    text-decoration: none;
+}
+.ms_step1 .container img{
+    position: absolute;
+    right: -13px;
+    top: 100px
+}
+
+.ms_step2{
+    height: 476px;
+    background: linear-gradient(257.4deg, #F2F5FA 0%, rgba(242, 245, 250, 0) 66.23%);
+}
+.ms_step2 .container{
+    position: relative;
+    max-width: 880px;
+    margin: auto;
+    padding: 132px 0;
+}
+.ms_step2_left{
+    position: absolute;
+    right: -10px;
+}
+.ms_step2_step{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A9AEC2;
+}
+.ms_step2_title{
+    margin-top: 35px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #4A4A4A;
+}
+.ms_step2_desc{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4A4A4A;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ms_step2 .container a{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2E54EA;
+    text-decoration: none;
+}
+.ms_step2 .container img{
+    position: absolute;
+    left: -6px;
+    top: 100px
+}
+
+.ms_step3 .container{
+    max-width: 880px;
+    margin: auto;
+    padding: 132px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ms_step3_step{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A9AEC2;
+    margin-bottom: 35px;
+}
+.ms_step3_title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #555A5E;
+    margin-bottom: 24px;
+}
+.ms_step3_desc{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #4A4A4A;
+    margin-bottom: 73px;
+}
+.ms_step3 .container img{
+    width: 632px;
+    height: 626px;
+    margin-left: 50px;
+}

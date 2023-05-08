@@ -1,13 +1,12 @@
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip,ResponsiveContainer, Legend } from 'recharts';
-import React, { useState, useEffect, useLayoutEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Chart.css';
 import axios from 'axios';
 
 const server_url = "http://localhost:5000"
 
 // responsible 에서 rendering이 안되는 오류 발생하여 없엤다가 다시 넣어봄
-function Chart({id}) {
-  const [data, setData] = useState([{'name':'000000', 'value':0}]);
+function Chart({id, data, setData}) {
   useEffect(() => {
     axios.get(server_url+'/api/data/'+id,{ withCredentials: true })
         .then(res => {
