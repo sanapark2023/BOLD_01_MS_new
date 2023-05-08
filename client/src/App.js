@@ -6,9 +6,11 @@ import Background from './pages/Background';
 import Header from './components/Header';
 import Types from './components/Types';
 import Footer from './components/Footer';
+import LanguageContextProvider from "./context/languageContext";
 
 function App() {
   return (
+    <LanguageContextProvider>
     <BrowserRouter>
     <div className="App">
       <Header/>
@@ -22,6 +24,7 @@ function App() {
       <Footer/>
     </div>
     </BrowserRouter>
+    </LanguageContextProvider>
   );
 }
 

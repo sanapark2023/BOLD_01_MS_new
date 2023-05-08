@@ -1,12 +1,14 @@
-import SurveyComponent from '../components/SurveyComponent';
+import React, { useContext } from "react";
+import { LanguageContext } from "../context/languageContext";
 import './Background.css';
 
 function Background() {
+    const { language, changeLanguage, getMessage } = useContext(LanguageContext);
     return (
     <article className='ms_background'>
         <div className='container'>
             <div className='ms_background_section'>
-                <h2>서비스 개발 배경</h2>
+                <h2>{getMessage("hello")}</h2>
                 <h1>국가데이터에 접근하기 힘들었나요? <br></br>실업률이나 환율 변동이 무엇을 나타내는지, 그 중요성은 어떠한지 분석하기 어려웠나요?</h1>
                 <p>SurveyCI에 오신 것을 환영합니다! 우리는 초보투자자들의 투자를 돕고자 이 서비스를 만들게 되었습니다. 
                     초보자들이 접하기 힘든 국가데이터를 니즈에 맞게 최적화하여 산출한 지수를 보여드립니다. 
