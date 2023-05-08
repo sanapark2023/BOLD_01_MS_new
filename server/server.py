@@ -11,7 +11,6 @@ PORT = os.getenv("PORT")
 CLIENT_URL = os.getenv("CLIENT_URL")
 app = Flask(__name__)
 CORS(app)
-
 cors = CORS(app, resources={r"/api/*": {"origins": CLIENT_URL}})
 
 def response_header_set(response):
