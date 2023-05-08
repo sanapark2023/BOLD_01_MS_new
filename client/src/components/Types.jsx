@@ -1,4 +1,5 @@
 import './Types.css';
+import { Link } from 'react-router-dom';
 
 function Types() {
     const type_list = [['트렌디한', '월스트리트인'],
@@ -18,10 +19,10 @@ function Types() {
         <ul className='ms_types_list'>
             {type_list.map((item, index)=>{return(
                 <li key={index}>
-                    <a href={'type/'+(index+1)}>
+                    <Link to={'/type/'+(index+1)}>
                         <img src={'type'+(index+1)+'.png'}></img>
                         <p>{item[0]}<br></br>{item[1]}</p>
-                    </a>
+                    </Link>
                 </li>
             )})}
         </ul>

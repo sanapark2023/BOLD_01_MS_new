@@ -1,6 +1,6 @@
 import Chart from '../components/Chart';
 import './TypePage.css';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import React, { useState } from 'react';
 
 function TypePage() {
@@ -77,10 +77,10 @@ function TypePage() {
                 <ul className='ms_types_list'>
                     {type_name_list.slice(0,4).map((item, index)=>{return(
                         <li key={index}>
-                            <a href={'../../type/'+(item[2])}>
+                            <Link to={'../../type/'+(item[2])}>
                                 <img src={'../../type'+(item[2])+'.png'}></img>
                                 <p>{item[0]}<br></br>{item[1]}</p>
-                            </a>
+                            </Link>
                         </li>
                     )})}
                 </ul>

@@ -1,6 +1,6 @@
 import './MainPage.css';
 import Types from '../components/Types';
-
+import { Link } from 'react-router-dom';
 function MainPage() {
     return (
     <>
@@ -8,7 +8,7 @@ function MainPage() {
             <div className='container'>
                 <h1>나만의<br></br> <span>투자유형</span>을<br></br> 알아보세요!</h1>
                 <p>투자유형 검사 결과에 따라<br></br> <span>맞춤형 경제지표</span>를 볼 수 있어요</p>
-                <a href='/test'>투자유형 검사하기</a>
+                <Link to='/test'>투자유형 검사하기</Link>
                 <img src='/HeroImg.png' alt='이미지'></img>
             </div>
         </article>
@@ -26,7 +26,7 @@ function MainPage() {
                     간편한 온라인 설문으로 나의 투자유형을 알아보세요<br></br>
                     총 8개의 유형 중 나의 투자유형은 무엇일까요?
                 </p>
-                <a href='test'>{'투자유형 검사하기 >'}</a>
+                <Link to='/test'>{'투자유형 검사하기 >'}</Link>
                 <img src='/1_step.png' alt='이미지'></img>
             </div>
         </article>
@@ -37,7 +37,7 @@ function MainPage() {
                     <p className='ms_step2_title'>추천 지표를 살펴보세요</p>
                     <p className='ms_step2_desc'>수익, 미래가치, ESG에 대한 성향을 바탕으로<br></br>
                     최적화한 데이터입니다. PDF를 다운받아 확인해보세요!</p>
-                    <a href='types'>{'추천 지표 살펴보기 >'}</a>
+                    <Link to='/types'>{'추천 지표 살펴보기 >'}</Link>
                 </div>
                 <img src='/2_step.png' alt='이미지'></img>
             </div>
