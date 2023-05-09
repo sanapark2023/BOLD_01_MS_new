@@ -7,6 +7,7 @@ import { LanguageContext } from "../context/languageContext";
 function TypePage() {
     const { language } = useContext(LanguageContext);
     const [data, setData] = useState([{'name':0,'value':0},{'name':0,'value':0}]);
+    const [loading, setLoading] = useState(true);
     const { id } = useParams();
     let type_list
     if (language === "ko") {
@@ -95,6 +96,7 @@ Introducing recommended economic indicators for <span>'{type_list[id-1][0]}'</sp
         </div>
         <div className='ms_typepage_chart'>
             <div className='container'>
+            {loading ? <p className='loading_title'>{language === 'ko' ? "이 유형에 딱 맞는 지표를 산출하고 있어요!":"We are calculating the perfect indicator for this type!"}</p>:
                 <div className='ms_typepage_chart_index'>
                     <h1>{data[data.length-1]['value'].toFixed(2)}</h1>
                     <div>
@@ -103,8 +105,8 @@ Introducing recommended economic indicators for <span>'{type_list[id-1][0]}'</sp
                             <span>{([(data[data.length-1]['value'] - data[data.length-2]['value'])/data[data.length-1]['value']] * 100).toFixed(2)+"%"}</span></p>
                         <p className='update'>{data[data.length-1]['name']}{language === 'ko' ? " 기준, 1달 단위 업데이트" : ", updated monthly"}</p>
                     </div>
-                </div>
-                <Chart id={id} data={data} setData={setData}/>
+                </div>}
+                <Chart id={id} data={data} setData={setData} setLoading={setLoading} loading={loading}/>
             </div>
         </div> 
         <div className='ms_typepage_other'>

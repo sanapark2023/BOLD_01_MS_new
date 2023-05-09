@@ -126,10 +126,11 @@
     margin: auto;
     padding: 62px 0 74px;
 }
-.ms_typepage_other .container h3{
-
+.loading_title{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 24px;
 }
-
 
 @media (max-width: 768px) {
     .ms_typepage_desc .container{
@@ -221,6 +222,11 @@
     }
     .ms_typepage_other .container h3{
         font-size: 18px;
+    }
+    .loading_title{
+        padding: 24px;
+        margin: 0;
+        font-size: 16px;
     }
     
 }
