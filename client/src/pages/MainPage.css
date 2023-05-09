@@ -18,6 +18,7 @@
     font-size: 50px;
     line-height: 60px;
     color: #FFFFFF;
+    z-index: 1;
 }
 .ms_hero h1 span{
     background: linear-gradient(90.14deg, #55FFE0 0.1%, #2FD1FC 43.93%, #2CCCFF 78.74%);
@@ -57,6 +58,7 @@
 }
 .ms_hero img{
     position: absolute;
+    z-index: 0;
     top:60px;
     right: -15px;
 }
@@ -237,12 +239,13 @@
     }
     .ms_api p{
         margin-top: 10px;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 140%;
+        text-align: center;
     }
     .ms_api img{
         margin-bottom: 0px;
-        width: 100%;
+        width: 98%;
     }
     .ms_step1{
         height: auto;
@@ -268,7 +271,7 @@
     .ms_step1 .container img{
         position: relative;
         margin-top: 20px;
-        width: 100%;
+        width: 98%;
         right: 0px;
         top: 0px
     }
@@ -302,7 +305,7 @@
     .ms_step2 .container img{
         position: relative;
         margin-top: 20px;
-        width: 100%;
+        width: 98%;
         left: 0px;
         top: 0px
     }
@@ -325,9 +328,9 @@
         margin-bottom: 20px;
     }
     .ms_step3 .container img{
-        width: 80%;
+        width: 70%;
         height: auto;
-        margin-left: 50px;
+        margin-left: 40px;
     }
     
 }

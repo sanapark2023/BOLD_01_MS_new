@@ -86,10 +86,11 @@ function TypePage() {
         <div className='ms_typepage_index'>
             <div className='container'>
                 <div className='ms_typepage_index_left'>
-                    <h3><span>'{type_list[id-1][0]}'</span>{language === 'ko' ? " 에게 추천하는 경제지표를 소개합니다!" : "desc"}</h3>
-                    <p>{language === 'ko' ? "경제지표 설명" : "desc"}</p>
+                    {language === 'ko' ? <h3><span>'{type_list[id-1][0]}'</span> 에게 추천하는 경제지표를 소개합니다!</h3>:<h3>
+Introducing recommended economic indicators for <span>'{type_list[id-1][0]}'</span></h3>}
+                    <p>{language === 'ko' ? "각 유형별 수익/안정, 미래/현재가치, ESG 성향에 따라 7개의 거시경제 지표를 활용하여 산출한 지표입니다. 산출 방법에 대한 자세한 설명은 PDF 파일을 받아 확인해보세요!" : "This is an indicator derived from 7 macroeconomic indicators based on profitability/stability, future/present value, and ESG tendencies for each type. For a detailed description of the calculation method, please download the PDF file and check it out!"}</p>
                 </div>
-                <a href={"/type"+id+".pdf"} target="_blank">{language === 'ko' ? "유형과 지표 설명 PDF받기" : "Types and Indicators Description PDF"}</a>
+                <a href={"/type"+id+".pdf"} target="_blank">{language === 'ko' ? "유형과 지표 설명 PDF받기" : "Indicators Description PDF"}</a>
             </div>
         </div>
         <div className='ms_typepage_chart'>
@@ -113,7 +114,7 @@ function TypePage() {
                     {type_name_list.slice(0,4).map((item, index)=>{return(
                         <li key={index}>
                             <a href={'../../type/'+(item[2])}>
-                                <img src={'../../type'+(item[2])+'.png'}></img>
+                                <div className='img_wrapper'><img src={'../../type'+(item[2])+'.png'}></img></div>
                                 <p>{item[0]}<br></br>{item[1]}</p>
                             </a>
                         </li>

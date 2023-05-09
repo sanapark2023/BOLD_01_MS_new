@@ -157,10 +157,11 @@
         top: 0px;
     }
     .ms_typepage_index .container{
+        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 24px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 36px 24px;
         z-index: 2;
     }
     .ms_typepage_index_left{
@@ -175,17 +176,17 @@
         margin-bottom: 12px;
     }
     .ms_typepage_index_left p{
-        font-size: 15px;
+        font-size: 13px;
         line-height: 140%;
         margin-bottom: 20px;
     }
     .ms_typepage_index .container a{
         background: #2E54EA;
         border-radius: 8px;
-        padding: 17px 30px;
+        padding: 12px 24px;
         height: fit-content;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 19px;
         color: #FFFFFF;
     }

@@ -35,7 +35,7 @@ function Types() {
             {type_list.map((item, index)=>{return(
                 <li key={index}>
                     <ScrollToTopLink to={'/type/'+(index+1)}>
-                        <img src={'type'+(index+1)+'.png'}></img>
+                        <div className='img_wrapper'><img src={'type'+(index+1)+'.png'}></img></div>
                         <p>{item[0]}<br></br>{item[1]}</p>
                     </ScrollToTopLink>
                 </li>
