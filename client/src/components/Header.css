@@ -70,6 +70,9 @@
 .ms_header ul li:hover{
     border-bottom: 1px solid #27C5F7;
 }
+.ms_header .mb_nav{
+    display: none;
+}
 
 @media (max-width: 768px) {
     .ms_header{
@@ -84,7 +87,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        height: 60px;
+        height: auto;
         max-width: 880px;
         margin: auto;
     }
@@ -99,9 +102,9 @@
     .ms_header nav{
         display: flex;
         width: 100%;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
     .ms_header nav a{
         margin-right: 0px;
@@ -126,7 +129,7 @@
     .ms_header ul{
         position: absolute;
         right: 24px;
-        top: 20px;
+        top: 16px;
         list-style: none;
         font-family: 'Roboto';
         font-size: 13px;
@@ -139,7 +142,8 @@
         padding: 0;
     }
     .ms_header ul li{
-        margin-left: 35px;
+        margin-left: 0px;
+        margin-bottom: 12px;
         cursor: pointer;
         border-bottom: 1px solid #181659;
     }
@@ -149,5 +153,34 @@
     .ms_header ul li:hover{
         border-bottom: 1px solid #27C5F7;
     }
-
+    .ms_header .pc_nav{
+        display: none;
+    }
+    .ms_header .mb_nav{
+        display: flex;
+        position: absolute;
+        left: 20px;
+        top: 16px;
+    }
+    .ms_header .mb_nav ul{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        left: 0px;
+        top: 50px;
+        background-color: #181659;
+        padding: 0 24px 8px;
+    }
+    .mb_nav button{
+        background-color:#181659;
+        color: #FFFFFF;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 0;
+    }
 }
