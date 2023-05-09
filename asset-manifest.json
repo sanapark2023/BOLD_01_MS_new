@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BOLD_01_MS_new/static/css/main.d0ec92b2.css",
+    "main.js": "/BOLD_01_MS_new/static/js/main.12a5387f.js",
+    "index.html": "/BOLD_01_MS_new/index.html",
+    "main.d0ec92b2.css.map": "/BOLD_01_MS_new/static/css/main.d0ec92b2.css.map",
+    "main.12a5387f.js.map": "/BOLD_01_MS_new/static/js/main.12a5387f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0ec92b2.css",
+    "static/js/main.12a5387f.js"
+  ]
+}
