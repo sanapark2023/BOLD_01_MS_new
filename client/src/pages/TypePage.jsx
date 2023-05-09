@@ -6,7 +6,7 @@ import { LanguageContext } from "../context/languageContext";
 
 function TypePage() {
     const { language } = useContext(LanguageContext);
-    const [data, setData] = useState([{'name':'000000', 'value':0},{'name':'000000', 'value':0}]);
+    const [data, setData] = useState([{'name':0,'value':0},{'name':0,'value':0}]);
     const { id } = useParams();
     let type_list
     if (language === "ko") {
@@ -106,7 +106,7 @@ Introducing recommended economic indicators for <span>'{type_list[id-1][0]}'</sp
                 </div>
                 <Chart id={id} data={data} setData={setData}/>
             </div>
-        </div>
+        </div> 
         <div className='ms_typepage_other'>
             <div className='container'>
                 <h3>{language === 'ko' ? "나와 비슷하거나 다른 유형도 구경해보세요!" : "Take a look at similar or different types!"}</h3>
