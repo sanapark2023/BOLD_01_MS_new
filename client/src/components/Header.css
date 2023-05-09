@@ -158,6 +158,7 @@
     }
     .ms_header .mb_nav{
         display: flex;
+        width: auto;
         position: absolute;
         left: 20px;
         top: 16px;
