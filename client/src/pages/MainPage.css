@@ -251,7 +251,7 @@
         padding: 36px 24px;
     }
     .ms_step1_step{
-        font-size: 15px;
+        font-size: 13px;
     }
     .ms_step1_title{
         margin-top: 20px;
@@ -284,7 +284,7 @@
         right: 0px;
     }
     .ms_step2_step{
-        font-size: 15px;
+        font-size: 13px;
         line-height: 140%;
     }
     .ms_step2_title{
@@ -311,16 +311,16 @@
         padding: 36px 24px;
     }
     .ms_step3_step{
-        font-size: 15px;
+        font-size: 13px;
         margin-bottom: 20px;
     }
     .ms_step3_title{
-        font-size: 24px;
+        font-size: 22px;
         line-height: 140%;
         margin-bottom: 20px;
     }
     .ms_step3_desc{
-        font-size: 16px;
+        font-size: 15px;
         line-height: 140%;
         margin-bottom: 20px;
     }

@@ -49,7 +49,7 @@ function MainPage() {
             <div className='container'>
                 <p className='ms_step3_step'>STEP 3</p>
                 <p className='ms_step3_title'>{language === 'ko'?"투자목표에 한 걸음 더 나아가요!":"Take one step closer to your investment goals!"}</p>
-                <p className='ms_step3_desc'>{language === 'ko'?"나의 투자유형과 추천지표를 참고하여":"Use your investment type and recommended indicators "}<br></br>{language === 'ko'?"좋은 투자자가 되기 위해 꾸준히 공부하며 함께 성장해요":"to become a better investor by studying and growing together."}</p>
+                <p className='ms_step3_desc'>{language === 'ko'?"나의 투자유형과 추천지표를 참고하여":"Use your investment type and recommended indicators "}{language === 'ko'?"좋은 투자자가 되기 위해 꾸준히 공부하며 함께 성장해요":"to become a better investor by studying and growing together."}</p>
                 <img src='/3_step.png' alt='이미지'></img>
             </div>
         </article>

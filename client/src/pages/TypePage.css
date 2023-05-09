@@ -133,7 +133,7 @@
 
 @media (max-width: 768px) {
     .ms_typepage_desc .container{
-        padding: 24px;
+        padding: 36px 24px;
     }
     .ms_typepage_desc .container h3{
         line-height: 140%;

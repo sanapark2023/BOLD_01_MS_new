@@ -36,7 +36,7 @@
 
 @media (max-width: 768px) {
     .ms_test .container{
-        padding: 24px;
+        padding: 36px 24px;
     }
     .ms_test_title{
         font-size: 12px;
