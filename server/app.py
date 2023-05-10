@@ -20,6 +20,10 @@ def response_header_set(response):
     response.headers['Access-Control-Allow-Headers'] = 'Content-Type, Authorization'
     return response
 
+@app.route('/')
+def great():
+    return  "Great"
+
 @app.route('/api/submit-survey')
 def get_investment_preference_data():
     survey_data = json.loads(request.args.get('surveyData'))
@@ -35,5 +39,5 @@ def send_data(type):
     response = response_header_set(response)
     return response
 
-if __name__ == '__main__':
-    app.run(port=PORT, debug=True)
+#if __name__ == '__main__':
+#    app.run(port=PORT, debug=True)
