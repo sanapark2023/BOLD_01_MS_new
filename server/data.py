@@ -4,7 +4,8 @@ from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 import pandas as pd
 from requests import get 
-
+from dotenv import load_dotenv
+load_dotenv()
 AUTH_KEY = os.getenv("AUTH_KEY")
 URL_1 = os.getenv("1_URL")
 URL_2 = os.getenv("2_URL")

@@ -6,7 +6,6 @@ from flask_cors import CORS
 import json
 from dotenv import load_dotenv
 
-load_dotenv()
 PORT = os.getenv("PORT")
 CLIENT_URL = os.getenv("CLIENT_URL")
 app = Flask(__name__)
@@ -39,5 +38,6 @@ def send_data(type):
     response = response_header_set(response)
     return response
 
-#if __name__ == '__main__':
-#    app.run(port=PORT, debug=True)
+if __name__ == '__main__':
+    load_dotenv()
+    app.run(host='0.0.0.0', port=PORT, debug=True)
