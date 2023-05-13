@@ -158,6 +158,7 @@
     color: #4A4A4A;
     margin-top: 20px;
     margin-bottom: 20px;
+    max-width: 350px;
 }
 .ms_step2 .container a{
     font-weight: 600;

@@ -19,7 +19,7 @@ const surveyJson_ko = {
   pages: [{
       elements: [{
           name: '1',
-          title: "연령대가 어떻게 되십니까?",
+          title: "연령대가 어떻게 되시나요?",
           type: "radiogroup",
           choices: [
               { value: 1, text: "10 - 20대" },
@@ -64,10 +64,10 @@ const surveyJson_ko = {
       title: "직접투자 경험이 있으시나요?",
       type: "radiogroup",
       choices: [
-          { value: 1, text: "있다, 1년 미만" },
-          { value: 2, text: "있다, 1-3년" },
-          { value: 3, text: "있다, 3년 이상" },
-          { value: 4, text: "없다" }
+          { value: 1, text: "있어요, 1년 미만" },
+          { value: 2, text: "있어요, 1-3년" },
+          { value: 3, text: "있어요, 3년 이상" },
+          { value: 4, text: "없어요" }
       ],
       isRequired: true,
       requiredErrorText: "필수 응답 문항입니다."
@@ -78,10 +78,10 @@ const surveyJson_ko = {
       title: "손실 또는 저조한 수익률로 인하여 투자를 중단한 적이 있으시나요?",
       type: "radiogroup",
       choices: [
-          { value: 1, text: "있다, 저조한 수익 또는 10% 미만의 손실로 인하여" },
-          { value: 2, text: "있다, 10-30% 손실로 인하여" },
-          { value: 3, text: "있다, 30% 이상의 손실로 인하여" },
-          { value: 4, text: "없다" }
+          { value: 1, text: "있어요, 저조한 수익 또는 10% 미만의 손실로 인하여" },
+          { value: 2, text: "있어요, 10-30% 손실로 인하여" },
+          { value: 3, text: "있어요, 30% 이상의 손실로 인하여" },
+          { value: 4, text: "없어요" }
       ],
       isRequired: true,
       requiredErrorText: "필수 응답 문항입니다."
@@ -118,7 +118,7 @@ const surveyJson_ko = {
       title: "투자대상의 ESG 현황에 대하여 어떻게 생각하시나요?",
       type: "radiogroup",
       choices: [
-          { value: 1, text: "전혀 상관하지 않는다" },
+          { value: 1, text: "전혀 상관하지 않아요" },
           { value: 2, text: "최소한의 ESG 규정만 달성" },
           { value: 3, text: "상당한 수준의 ESG 기준을 달성" },
           { value: 4, text: "엄격한 잣대의 ESG 기준을 자체설정 및 달성" }

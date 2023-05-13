@@ -6,15 +6,15 @@ export const messages = {
       background: 
       {
         title_s_1: "Why we decided to develop this service",
-        title_1_1: "Have you faced challenges accessing government data?",
-        title_2_1: "Was it difficult to analyze how unemployment rates or exchange rate fluctuations affect your investment?",
-        desc_1: "Welcome to SurveyCI! We created this service to assist novice investors. We provide indices optimized for user needs by compiling national data that most beginners find difficult to access. Additionally, we respect ESG values such as corporate social responsibility and climate change, and include ESG metrics in our indices to accommodate investors' high interest in ESG.",
+        title_1_1: "Have you faced challenges accessing government data? Was it difficult to analyze how unemployment rates or exchange rate fluctuations affect your investment?",
+        title_2_1: "",
+        desc_1: "Welcome to Nextdex! We created this service to assist novice investors. We provide indices optimized for user needs by compiling national data that most beginners find difficult to access. Additionally, we respect ESG values such as corporate social responsibility and climate change, and include ESG metrics in our indices to accommodate investors' high interest in ESG.",
         title_s_2: "How to use our service",
         title_1_2: "The following is how you can utilize our indices",
-        desc_2: "Our data at SurveyCI can assist you in making investment decisions! We have analyzed detailed economic data spanning the past 10 years and ESG compliance rates of listed companies on KOSPI to optimize our service for your investment style.",
+        desc_2: "Our data at Nextdex can assist you in making investment decisions! We have analyzed detailed economic data spanning the past 10 years and ESG compliance rates of listed companies on KOSPI to optimize our service for your investment style.",
         title_s_3: "References",
         title_1_3: "We have used reliable data sources.",
-        desc_3: "SurveyCI only uses reliable national data sources. We utilized open APIs from the Bank of Korea and other public portals to gather all necessary data for index calculation, including unemployment rates, economic growth rates, and ESG compliance rates.",
+        desc_3: "Nextdex only uses reliable national data sources. We utilized open APIs from the Bank of Korea and other public portals to gather all necessary data for index calculation, including unemployment rates, economic growth rates, and ESG compliance rates.",
       },
     },
     ko: {
