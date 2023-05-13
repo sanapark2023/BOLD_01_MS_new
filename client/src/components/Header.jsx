@@ -31,7 +31,7 @@ function Header() {
     return (
     <header className='ms_header'>
         <div className='container'>
-        <h1><ScrollToTopLink to=''>Survey CI</ScrollToTopLink></h1>
+        <h1><ScrollToTopLink to=''>Nextdex</ScrollToTopLink></h1>
         <nav className='pc_nav'>
             <ScrollToTopNavLink to="test" activeClassName="active"><h2>{language === 'ko' ? "투자유형 검사" : "Investment Type Test"}</h2></ScrollToTopNavLink>
             <ScrollToTopNavLink to="background" activeClassName="active"><h2>{language === 'ko' ? "백그라운드" : "Background"}</h2></ScrollToTopNavLink>

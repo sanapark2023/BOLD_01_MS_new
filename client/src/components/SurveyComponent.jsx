@@ -23,9 +23,9 @@ const surveyJson_ko = {
           type: "radiogroup",
           choices: [
               { value: 1, text: "10 - 20대" },
-              { value: 2, text: "20 - 30대" },
-              { value: 3, text: "30 - 40대" },
-              { value: 4, text: "40대 이상" }
+              { value: 2, text: "30대" },
+              { value: 3, text: "40대" },
+              { value: 4, text: "50대 이상" }
           ],
           isRequired: true,
           requiredErrorText: "필수 응답 문항입니다."
@@ -137,16 +137,16 @@ const surveyJson_en = {
   pages: [{
       elements: [{
           name: '1',
-          title: "What is your age range?",
+          title: "Please select your age group.",
           type: "radiogroup",
           choices: [
-              { value: 1, text: "10s - 20s" },
-              { value: 2, text: "20s - 30s" },
-              { value: 3, text: "30s - 40s" },
-              { value: 4, text: "over 40s" }
+              { value: 1, text: "10's-20's" },
+              { value: 2, text: "30's" },
+              { value: 3, text: "40's" },
+              { value: 4, text: "50's or over" }
           ],
           isRequired: true,
-          requiredErrorText: "This is a required response item."
+          requiredErrorText: "This is a required response."
       }]
   }, {
     elements: [{
@@ -154,95 +154,95 @@ const surveyJson_en = {
         title: " What is your annual income?",
         type: "radiogroup",
         choices: [
-            { value: 1, text: "Less than 30 million won" },
-            { value: 2, text: "More than 30 million won and less than 45 million won" },
-            { value: 3, text: "More than 45 million won and less than 75 million won" },
-            { value: 4, text: "Less than 75 million won" }
+            { value: 1, text: "Less than $35,000" },
+            { value: 2, text: "Greater than $35,000 but less than $60,000" },
+            { value: 3, text: "Greater than $60,000 but less than $85,000" },
+            { value: 4, text: "Greater than $85,000" }
         ],
         isRequired: true,
-        requiredErrorText: "This is a required response item."
+        requiredErrorText: "This is a required response."
     }]
 }, {
   elements: [{
       name: '3',
-      title: "How well do you understand the structure and types of financial investment products (stocks, funds, bonds, etc.)?",
+      title: "How well do you understand the structure and types of financial investment products (e.g. stocks, funds, bonds)?",
       type: "radiogroup",
       choices: [
-          { value: 1, text: "I hardly understand" },
+          { value: 1, text: "I barely understand" },
           { value: 2, text: "I understand a little" },
-          { value: 3, text: "I deeply understand" },
-          { value: 4, text: "I understand most" }
+          { value: 3, text: "I understand to some extent" },
+          { value: 4, text: "I mostly understand" }
       ],
       isRequired: true,
-      requiredErrorText: "This is a required response item."
+      requiredErrorText: "This is a required response."
   }]
 }, {
   elements: [{
       name: '4',
-      title: "Do you have direct investment experience?",
+      title: "Do you have experience in direct investment?",
       type: "radiogroup",
       choices: [
           { value: 1, text: "Yes, less than 1 year" },
           { value: 2, text: "Yes, 1-3 years" },
           { value: 3, text: "Yes, more than 3 years" },
-          { value: 4, text: "does not exist" }
+          { value: 4, text: "No, I do not." }
       ],
       isRequired: true,
-      requiredErrorText: "This is a required response item."
+      requiredErrorText: "This is a required response."
   }]
 }, {
   elements: [{
       name: '5',
-      title: "Have you ever stopped investing because of losses or poor returns?",
+      title: "Have you ever stopped investing due to losses or poor returns?",
       type: "radiogroup",
       choices: [
-          { value: 1, text: "Yes, due to poor returns or losses of less than 10%." },
-          { value: 2, text: "Yes, due to 10-30% loss" },
+          { value: 1, text: "Yes, due to poor losses of less than 10%." },
+          { value: 2, text: "Yes, due to a 10-30% loss" },
           { value: 3, text: "Yes, due to losses of more than 30%" },
-          { value: 4, text: "does not exist" }
+          { value: 4, text: "No, I have never stopped investing due to losses OR have no experience of direct investment" }
       ],
       isRequired: true,
-      requiredErrorText: "This is a required response item."
+      requiredErrorText: "This is a required response."
   }]
 }, {
   elements: [{
       name: '6',
-      title: "What kind of propensity do you seek for returns and risks when investing?",
+      title: "Which style of investing do you prefer?",
       type: "radiogroup",
       choices: [
-          { value: 1, text: "low return low risk" },
-          { value: 2, text: "high return high risk" }
+          { value: 1, text: "low return, accompanied by low risk" },
+          { value: 2, text: "high return, accompanied by high risk" }
       ],
       isRequired: true,
-      requiredErrorText: "This is a required response item."
+      requiredErrorText: "This is a required response."
   }]
 },{
   elements: [{
       name: '7',
-      title: "How do you plan to use your investment?",
+      title: "How do you plan to utilize your investment returns?",
       type: "radiogroup",
       choices: [
-          { value: 1, text: "Saving money for retirement" },
-          { value: 2, text: "Raising extra funds such as travel expenses and car purchase funds" },
-          { value: 3, text: "Required funds such as living expenses" },
-          { value: 4, text: "Current child education costs or support for dependents" }
+          { value: 1, text: "Save money for retirement" },
+          { value: 2, text: "Raise non-necessary funds such as travel expenses and car purchase" },
+          { value: 3, text: "Raise necessary funds such as living expenses" },
+          { value: 4, text: "Support financial dependents such as children and elderly parents" }
       ],
       isRequired: true,
-      requiredErrorText: "This is a required response item."
+      requiredErrorText: "This is a required response."
   }]
 }, {
   elements: [{
       name: '8',
-      title: "What do you think about the ESG status of investment targets?",
+      title: "What are your considerations in ESG?",
       type: "radiogroup",
       choices: [
-          { value: 1, text: "don't care at all" },
-          { value: 2, text: "Achieving only minimal ESG regulations" },
-          { value: 3, text: "Achieving significant ESG standards" },
-          { value: 4, text: "Self-setting and achieving strict ESG standards" }
+          { value: 1, text: "I do not look for ESG when investing" },
+          { value: 2, text: "Reach minimal ESG regulations" },
+          { value: 3, text: "Achieve significant ESG standards" },
+          { value: 4, text: "Self-set and achieve strict ESG standards" }
       ],
       isRequired: true,
-      requiredErrorText: "This is a required response item."
+      requiredErrorText: "This is a required response."
   }]
 }]}
 

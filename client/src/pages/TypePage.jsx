@@ -20,14 +20,14 @@ function TypePage() {
                         ['책임있는 CEO','책임있는 CEO로서 이들은 ESG에 대하여 엄격한 잣대를 요구하며, 무모한 투자보다는 안정적이고 현재가치에 집중하는 투자철학을 보유하고 있습니다.'],
                         ['인내하는 미래비전가','인내하는 미래비전가는 안정적이지만 미래 비전이 확고한 기업들을 선택하여 투자합니다. ESG보다는 현재의 안정 등 현실적인 요소들을 추구합니다.']]
     } else {
-        type_list = [['The Trend-sensitive Wallstreeter','Trendy Wall Streeters prioritize profitability, analyzing the current value of a company to make investment decisions, and holding strict standards for ESG.'],
-                        ['The Ambitious Investor','A thrill-seeking investor who values returns focuses on analyzing the current value of a company to make investment decisions, but is also prepared to jump in even if it doesn\'t align with ESG trends, if there is an opportunity.'],
-                        ['The Pioneering Explorers','Adventurous pioneers prioritize returns and analyze future company value when making investment decisions. While they respect ESG values, their top priority is always profitability.'],
-                        ['The Silicon-Valleyan Entrepreneur','A Silicon Valley-style future-oriented company focuses on profits and makes investment decisions by enhancing the company\'s future value. They consider ESG to be an unstoppable global trend and therefore value the company\'s contribution to social, environmental, and governance issues.'],
-                        ['The moderating idealist','Mediating idealists prioritize a future vision when investing but also value current stability and are willing to compromise. They hold strict standards for ESG.'],
-                        ['The disciplined realist','Realistic minimalists pursue low risk and low returns. For them, investing is a short-term and incidental factor, and they value the current value of the company.'],
-                        ['The responsible CEO','As responsible CEOs, they demand strict standards for ESG and hold an investment philosophy that prioritizes stability and current value over reckless investments.'],
-                        ['The persevering visionist','Patient visionaries prioritize stable but visionary companies when investing, focusing on practical factors such as current stability rather than ESG.']]
+        type_list = [['Trend-sensitive Wallstreeter','Trendy Wall Streeters prioritize profitability, analyzing the current value of a company to make investment decisions, and holding strict standards for ESG.'],
+                        ['Ambitious Investor','Ambitious investors focuses on analyzing the current value of a company to make investment decisions, but are also prepared to invest in those that do not align with strict ESG trends.'],
+                        ['Pioneering Explorers','Pioneering explorers prioritize returns and the long-term value when making investment decisions. While they do respect ESG values, profitability remains their top priority.'],
+                        ['Silicon-Valleyan Entrepreneur','Silicon Valleyan Entrepreneurs focus on profits and make investment decisions by enhancing the company\'s future value. They consider ESG to be an unstoppable global trend and therefore value the company\'s contribution to social, environmental, and governance issues.'],
+                        ['Moderating idealist','Moderating idealists prioritize future vision when investing, but also value current stability and are willing to compromise. They hold strict standards for ESG.'],
+                        ['Disciplined realist','Disciplined realists pursue low risk and low returns. For them, investing is a short-term and incidental factor, and they value the current value of the company.'],
+                        ['Responsible CEO','Responsible CEOs demand strict standards for ESG and hold an investment philosophy that prioritizes stability and current value over high-risk investments.'],
+                        ['Persevering visionist','Persevering visionists prioritize stable but visionary companies when investing, focusing on practical factors such as current stability rather than ESG.']]
     }
     function shuffle(array) {
     array.sort(() => Math.random() - 0.5);
@@ -43,14 +43,14 @@ function TypePage() {
                                     ['책임있는', 'CEO',7],
                                     ['인내하는', '미래비전가',8]]
     } else {
-        type_name_list_fixed =  [['The Trend-sensitive', 'Wallstreeter',1],
-                                    ['The Ambitious','Investor',2],
-                                    ['The Pioneering', 'Explorers',3],
-                                    ['The Silicon-Valleyan', 'Entrepreneur',4],
-                                    ['The moderating', 'idealist',5],
-                                    ['The disciplined', 'realist',6],
-                                    ['The responsible', 'CEO',7],
-                                    ['The persevering', 'visionist',8]]
+        type_name_list_fixed =  [['Trend-sensitive', 'Wallstreeter', 1],
+                                    ['Ambitious','Investor', 2],
+                                    ['Pioneering', 'Explorer', 3],
+                                    ['Silicon-Valleyan', 'Entrepreneur', 4],
+                                    ['Moderating', 'Idealist', 5],
+                                    ['Disciplined', 'Realist', 6],
+                                    ['Responsible', 'CEO', 7],
+                                    ['Persevering', 'Visionist'], 8]
     }
     let type_name_list
     if (language === "ko") {
@@ -63,14 +63,14 @@ function TypePage() {
                             ['책임있는', 'CEO',7],
                             ['인내하는', '미래비전가',8]]
     } else {
-        type_name_list =  [['The Trend-sensitive', 'Wallstreeter',1],
-                            ['The Ambitious','Investor',2],
-                            ['The Pioneering', 'Explorers',3],
-                            ['The Silicon-Valleyan', 'Entrepreneur',4],
-                            ['The moderating', 'idealist',5],
-                            ['The disciplined', 'realist',6],
-                            ['The responsible', 'CEO',7],
-                            ['The persevering', 'visionist',8]]
+        type_name_list =  [['Trend-sensitive', 'Wallstreeter', 1],
+                            ['Ambitious','Investor', 2],
+                            ['Pioneering', 'Explorer', 3],
+                            ['Silicon-Valleyan', 'Entrepreneur', 4],
+                            ['Moderating', 'Idealist', 5],
+                            ['Disciplined', 'Realist', 6],
+                            ['Responsible', 'CEO', 7],
+                            ['Persevering', 'Visionist', 8]]
     }
     shuffle(type_name_list)
 
@@ -88,15 +88,15 @@ function TypePage() {
             <div className='container'>
                 <div className='ms_typepage_index_left'>
                     {language === 'ko' ? <h3><span>'{type_list[id-1][0]}'</span> 에게 추천하는 경제지표를 소개합니다!</h3>:<h3>
-Introducing recommended economic indicators for <span>'{type_list[id-1][0]}'</span></h3>}
-                    <p>{language === 'ko' ? "각 유형별 수익/안정, 미래/현재가치, ESG 성향에 따라 7개의 거시경제 지표를 활용하여 산출한 지표입니다. 산출 방법에 대한 자세한 설명은 PDF 파일을 받아 확인해보세요!" : "This is an indicator derived from 7 macroeconomic indicators based on profitability/stability, future/present value, and ESG tendencies for each type. For a detailed description of the calculation method, please download the PDF file and check it out!"}</p>
+Introducing the recommended index for <span>'{type_list[id-1][0]}'</span></h3>}
+                    <p>{language === 'ko' ? "각 유형별 수익/안정, 미래/현재가치, ESG 성향에 따라 7개의 거시경제 지표를 활용하여 산출한 지표입니다. 산출 방법에 대한 자세한 설명은 PDF 파일을 받아 확인해보세요!" : "Check out your customized index derived from 7 macroeconomic indicators based on profitability/stability, future/present value, and ESG tendencies of your investment type. Please download the PDF file for a detailed description of the calculation method and how to best utilize the index."}</p>
                 </div>
-                <a href={"/type"+id+".pdf"} target="_blank">{language === 'ko' ? "유형과 지표 설명 PDF받기" : "Indicators Description PDF"}</a>
+                <a href={"/type"+id+".pdf"} target="_blank">{language === 'ko' ? "유형과 지표 설명 PDF받기" : "Index Description PDF"}</a>
             </div>
         </div>
         <div className='ms_typepage_chart'>
             <div className='container'>
-            {loading ? <p className='loading_title'>{language === 'ko' ? "이 유형에 딱 맞는 지표를 산출하고 있어요!":"We are calculating the perfect indicator for this type!"}</p>:
+            {loading ? <p className='loading_title'>{language === 'ko' ? "이 유형에 딱 맞는 지표를 산출하고 있어요!":"We are calculating the customized index for your investment type!"}</p>:
                 <div className='ms_typepage_chart_index'>
                     <h1>{data[data.length-1]['value'].toFixed(2)}</h1>
                     <div>
@@ -111,7 +111,7 @@ Introducing recommended economic indicators for <span>'{type_list[id-1][0]}'</sp
         </div> 
         <div className='ms_typepage_other'>
             <div className='container'>
-                <h3>{language === 'ko' ? "나와 비슷하거나 다른 유형도 구경해보세요!" : "Take a look at similar or different types!"}</h3>
+                <h3>{language === 'ko' ? "나와 비슷하거나 다른 유형도 구경해보세요!" : "Explore other investment types and their customized indices!"}</h3>
                 <ul className='ms_types_list'>
                     {type_name_list.slice(0,4).map((item, index)=>{return(
                         <li key={index}>
