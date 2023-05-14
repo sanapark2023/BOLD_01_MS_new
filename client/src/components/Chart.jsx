@@ -5,7 +5,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import './Chart.css';
 import axios from 'axios';
 
-const server_url = "http://13.209.8.154:5000"
+const server_url = "http://3.39.239.40:5000"
 
 // responsible 에서 rendering이 안되는 오류 발생하여 없엤다가 다시 넣어봄
 function Chart({id, data, setData, setLoading, loading}) {
