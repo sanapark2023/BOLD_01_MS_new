@@ -252,7 +252,7 @@ function SurveyComponent() {
   const navigate = useNavigate();
   const onComplete = useCallback((survey) => {
     setOpen(true)
-    axios.get('http://3.34.125.64:5000/api/submit-survey', {
+    axios.get('http://13.209.8.154/api/submit-survey', {
       withCredentials: true,
       params: {
         surveyData: JSON.stringify(survey.data)
