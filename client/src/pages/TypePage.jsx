@@ -91,7 +91,7 @@ function TypePage() {
 Introducing the recommended index for <span>'{type_list[id-1][0]}'</span></h3>}
                     <p>{language === 'ko' ? "각 유형별 수익/안정, 미래/현재가치, ESG 성향에 따라 7개의 거시경제 지표를 활용하여 산출한 지표입니다. 산출 방법에 대한 자세한 설명은 PDF 파일을 받아 확인해보세요!" : "Check out your customized index derived from 7 macroeconomic indicators based on profitability/stability, future/present value, and ESG tendencies of your investment type. Please download the PDF file for a detailed description of the calculation method and how to best utilize the index."}</p>
                 </div>
-                <a href={"/type"+id+".pdf"} target="_blank">{language === 'ko' ? "유형과 지표 설명 PDF받기" : "Index Description PDF"}</a>
+                <a href={"/Nextdex.pdf"} target="_blank">{language === 'ko' ? "유형과 지표 설명 PDF받기" : "Index Description PDF"}</a>
             </div>
         </div>
         <div className='ms_typepage_chart'>
