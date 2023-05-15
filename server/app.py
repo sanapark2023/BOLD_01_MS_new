@@ -7,13 +7,15 @@ import json
 from dotenv import load_dotenv
 
 PORT = os.getenv("PORT")
-CLIENT_URL = os.getenv("CLIENT_URL")
 app = Flask(__name__)
 CORS(app)
-cors = CORS(app, resources={r"/api/*": {"origins": CLIENT_URL}})
+cors = CORS(app, resources={r"/api/*": {"origins": ["http://www.nextdex.kr", "http://nextdex.kr"]}})
 
 def response_header_set(response):
-    response.headers['Access-Control-Allow-Origin'] = CLIENT_URL
+    allowed_origins = ['http://www.nextdex.kr', 'http://nextdex.kr']
+    origin = request.headers.get('Origin')
+    if origin in allowed_origins:
+        response.headers['Access-Control-Allow-Origin'] = origin
     response.headers['Access-Control-Allow-Credentials'] = 'true'
     response.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE'
     response.headers['Access-Control-Allow-Headers'] = 'Content-Type, Authorization'
