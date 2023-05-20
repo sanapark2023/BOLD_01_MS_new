@@ -157,9 +157,9 @@ def make_raw_data(type):
     
     # ESG 원본 데이터 엑셀저장하고 불러오기
     FILE_NAME = "DowJonesSKI.xls"
-    with open("DowJonesSKI.xls", "wb") as f:   
-        response = get(URL_7)               
-        f.write(response.content)     
+    #with open("DowJonesSKI.xls", "wb") as f:   
+    #    response = get(URL_7)               
+    #    f.write(response.content)     
     df = pd.read_excel(FILE_NAME, skiprows=6)
     
     # 원본 excel에서 마지막 필요없는 4개 행 제거
