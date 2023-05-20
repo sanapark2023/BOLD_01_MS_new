@@ -160,7 +160,7 @@ def make_raw_data(type):
     with open("DowJonesSKI.xls", "wb") as f:   
         response = get(URL_7)               
         f.write(response.content)     
-    df = pd.read_excel(FILE_NAME, skiprows=6)
+    df = pd.read_excel(FILE_NAME, skiprows=6, engine='xlrd')
     
     # 원본 excel에서 마지막 필요없는 4개 행 제거
     df = df[:-4]
