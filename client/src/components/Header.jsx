@@ -50,7 +50,7 @@ function Header() {
         )}
       </nav>
 
-        <ul>{language === 'en' ? <li onClick={() => changeLanguage("ko")}>English</li> :<li onClick={() => changeLanguage("en")}>한국어</li>}
+        <ul>{language === 'en' ? <li onClick={() => changeLanguage("ko")}>한국어</li> :<li onClick={() => changeLanguage("en")}>English</li>}
             
         </ul>
         </div>
