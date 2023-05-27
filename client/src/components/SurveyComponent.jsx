@@ -39,7 +39,7 @@ const surveyJson_ko = {
             { value: 1, text: "3,000만원 미만" },
             { value: 2, text: "3,000만원 이상 4,500만원 미만" },
             { value: 3, text: "4,500만원 이상 7,500만원 미만" },
-            { value: 4, text: "7,500만원 미만" }
+            { value: 4, text: "7,500만원 이상" }
         ],
         isRequired: true,
         requiredErrorText: "필수 응답 문항입니다."
