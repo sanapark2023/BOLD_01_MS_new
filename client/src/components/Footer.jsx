@@ -8,7 +8,7 @@ function Footer() {
     <article className='ms_footer'>
         <div className='container'>
             <div className='ms_footer_top'>
-                <ScrollToTopLink className='ms_footer_top_logo' to='/'>Nextdex</ScrollToTopLink>
+                <ScrollToTopLink className='ms_footer_top_logo' to='/'><img src='/nextdex_logo-white.png' className='logo'/></ScrollToTopLink>
                 <ul>
                     <li><ScrollToTopLink to='../../test'>{language === 'ko' ? "투자유형 검사" : "Investment Type Test"}</ScrollToTopLink></li>
                     <li><ScrollToTopLink to='../../background'>{language === 'ko' ? "백그라운드" : "Background"}</ScrollToTopLink></li>
