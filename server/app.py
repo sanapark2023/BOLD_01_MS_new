@@ -23,7 +23,7 @@ def response_header_set(response):
 
 @app.route('/')
 def great():
-    return  "Great"
+    return  "Great1111"
 
 @app.route('/api/submit-survey')
 def get_investment_preference_data():

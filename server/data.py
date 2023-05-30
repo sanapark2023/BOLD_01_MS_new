@@ -1,4 +1,5 @@
 import requests
+import math
 import os
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
@@ -20,6 +21,7 @@ def start_date_check():
     today_m = datetime.today().strftime('%Y%m')
     start_date_y = (datetime.today() - timedelta(days=3650)).strftime('%Y')
     today_y = datetime.today().strftime('%Y')
+    print(start_date_m, today_m, start_date_y, today_y)
     return start_date_m, today_m, start_date_y, today_y
     
 def make_raw_data(type):
@@ -43,6 +45,7 @@ def make_raw_data(type):
         date_obj = datetime.strptime(date_string, "%Y%m")
         new_date_obj = date_obj + relativedelta(months=1)
         data_1.append({'name':new_date_obj.strftime('%Y%m'), 'value':data_1[-1]['value']})
+    #print(data_1)
     
     # 2. 소비심리지수
     ecos_url = "https://ecos.bok.or.kr/api/StatisticSearch/"+AUTH_KEY+"/json/kr/1/120/"+code_2
@@ -56,6 +59,7 @@ def make_raw_data(type):
         date_obj = datetime.strptime(date_string, "%Y%m")
         new_date_obj = date_obj + relativedelta(months=1)
         data_2.append({'name':new_date_obj.strftime('%Y%m'), 'value':data_2[-1]['value']})
+    #print(data_2)
     
     # 3. 주식시장 일평균 거래대금(코스피)(천원)
     ecos_url = "https://ecos.bok.or.kr/api/StatisticSearch/"+AUTH_KEY+"/json/kr/1/120/"+code_3
@@ -69,6 +73,7 @@ def make_raw_data(type):
         date_obj = datetime.strptime(date_string, "%Y%m")
         new_date_obj = date_obj + relativedelta(months=1)
         data_3.append({'name':new_date_obj.strftime('%Y%m'), 'value':data_3[-1]['value']})
+    #print(data_3)
     
     # 4. 설비투자지수(100)
     ecos_url = "https://ecos.bok.or.kr/api/StatisticSearch/"+AUTH_KEY+"/json/kr/1/120/"+code_4
@@ -78,10 +83,14 @@ def make_raw_data(type):
     for d in data_list:
         data_4.append({'name':d["TIME"], 'value':d["DATA_VALUE"]}) 
     if len(data_4) < 120:
+        print(len(data_4))
         date_string = data_4[-1]['name']
         date_obj = datetime.strptime(date_string, "%Y%m")
         new_date_obj = date_obj + relativedelta(months=1)
         data_4.append({'name':new_date_obj.strftime('%Y%m'), 'value':data_4[-1]['value']})
+        if len(data_4) < 120:
+            data_4.append({'name':today_m, 'value':data_4[-1]['value']})
+    print(data_4)
     
     # 5. 현재가계저축(100)
 
@@ -96,6 +105,7 @@ def make_raw_data(type):
         date_obj = datetime.strptime(date_string, "%Y%m")
         new_date_obj = date_obj + relativedelta(months=1)
         data_5.append({'name':new_date_obj.strftime('%Y%m'), 'value':data_5[-1]['value']})
+    #print(data_5)
     
     # 6. 합계출산율(년도)(명)
     ecos_url = "https://ecos.bok.or.kr/api/StatisticSearch/"+AUTH_KEY+"/json/kr/1/120/"+code_6
@@ -113,10 +123,14 @@ def make_raw_data(type):
             new_data_6.append({'name':d['name']+str(start_month).zfill(2), 'value':d['value']})
             start_month += 1
     if before_data_6[-1]['name'][:4] != today_y:
+        print('걸림!!!!!')
         start_month = 1
-        while start_month < int(today_m[-2:]):
+        while start_month <= int(today_m[-2:]):
+            print(start_month)
             new_data_6.append({'name':today_y+str(start_month).zfill(2), 'value':new_data_6[-1]['value']})
             start_month += 1
+    print(len(new_data_6))
+    print(new_data_6)
     
     # 데이터 프레임으로 변환
     df_1 = pd.DataFrame(data_1, columns=['name', 'value'])
@@ -232,6 +246,9 @@ def make_raw_data(type):
     
     result = [{'name': idx_val, 'value': row[type]} 
           for idx_val, row in all_df.loc[:, [type]].iterrows()]
+    if math.isnan(result[-1]['value']):
+        result[-1]['value'] = result[-2]['value']
+    print(result)
     return result
 
 def get_data(type):
