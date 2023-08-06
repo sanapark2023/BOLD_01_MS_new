@@ -246,6 +246,29 @@ def make_raw_data(type):
     
     result = [{'name': idx_val, 'value': row[type]} 
           for idx_val, row in all_df.loc[:, [type]].iterrows()]
+    
+    if math.isnan(result[-12]['value']):
+        result[-12]['value'] = result[-13]['value']
+    if math.isnan(result[-11]['value']):
+        result[-11]['value'] = result[-12]['value']
+    if math.isnan(result[-10]['value']):
+        result[-10]['value'] = result[-11]['value']
+    if math.isnan(result[-9]['value']):
+        result[-9]['value'] = result[-10]['value']
+    if math.isnan(result[-8]['value']):
+        result[-8]['value'] = result[-9]['value']
+    if math.isnan(result[-7]['value']):
+        result[-7]['value'] = result[-8]['value']
+    if math.isnan(result[-6]['value']):
+        result[-6]['value'] = result[-7]['value']
+    if math.isnan(result[-5]['value']):
+        result[-5]['value'] = result[-6]['value']
+    if math.isnan(result[-4]['value']):
+        result[-4]['value'] = result[-5]['value']
+    if math.isnan(result[-3]['value']):
+        result[-3]['value'] = result[-4]['value']
+    if math.isnan(result[-2]['value']):
+        result[-2]['value'] = result[-3]['value']
     if math.isnan(result[-1]['value']):
         result[-1]['value'] = result[-2]['value']
     print(result)
